@@ -18,6 +18,7 @@ class TimerClass extends Component {
             }));
         }, 10);
     };
+
     stopTimer = () => {
         this.setState({ timerOn: false });
         clearInterval(this.timer);
@@ -36,7 +37,7 @@ class TimerClass extends Component {
         const { time, timerOn } = this.state
         return (
             <div className="Timers">
-                <h2>StopWatch</h2>
+                <h2>Stop Watch</h2>
                 <div id="display">
                     {/*{console.log(time)}*/}
                     <span>{("0" + ~~((time / 60000) % 60)).slice(-2)}:</span>
