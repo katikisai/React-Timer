@@ -37,7 +37,7 @@ class TimerClass extends Component {
         const { time, timerOn } = this.state
         return (
             <div className="Timers">
-                <h2>Stop Watch</h2>
+                <h2>Stop Watch(Class)</h2>
                 <div id="display">
                     {/*{console.log(time)}*/}
                     <span>{("0" + ~~((time / 60000) % 60)).slice(-2)}:</span>
